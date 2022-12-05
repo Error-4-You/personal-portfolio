@@ -88,18 +88,18 @@
     <form action="">
 
         <div class="inputBox">
-            <input type="text" placeholder="your name">
-            <input type="number" placeholder="your number">
+            <input id="name" type="text" placeholder="your name">
+            <input id="message"  type="number" placeholder="your number">
         </div>
 
         <div class="inputBox">
-            <input type="email" placeholder="your email">
+            <input id="email" type="email" placeholder="your email">
             <input type="text" placeholder="your subject">
         </div>
 
-        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <textarea name="" placeholder="your message" id="message" cols="30" rows="10"></textarea>
 
-        <input type="submit" value="send message" class="btn">
+        <input type="submit" value="send message" class="btn" onclick="sendMail()">
 
     </form>
 
@@ -110,6 +110,16 @@
 <!-- custom js file link  -->
 
 <script src="../js/load.js"></script>
+
+<!--mail ls-->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    (function () {
+      emailjs.init("J01QMSmqj93QY8gmJ");
+    })();
+  </script>
 
 <!-- contact section ends -->
 
