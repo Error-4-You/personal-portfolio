@@ -5,7 +5,7 @@ function sendMail() {
       message: document.getElementById("message").value,
     };
   
-    const serviceID = "heshansedvin@gmail.com";
+    const serviceID = "service_7xt846z";
     const templateID = "Navodi2005";
   
       emailjs.send(serviceID, templateID, params)
